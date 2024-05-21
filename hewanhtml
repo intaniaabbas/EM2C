@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML</title>
+</head>
+<body>
+    <h1 style="text-align: center;">WELCOME USER!</h1>
+    <hr>
+    <img style="display: grid;" src="816A4jWNyRL._AC_UF894,1000_QL80_.jpg" alt="">
+    <h1 id="home">Shadow & Bones</h1>
+    <h2>Action, Adventure, Drama, Romance</h2>
+    <hr>
+    <p style="text-indent: 10px; color: black; font-size: 24px; font-family: 'Times New Roman', Times, serif; text-align: center;">Shadow and Bone is a fantasy novel, in which monsters are real and so are Grisha, people who possess the ability to control the elements, such as summoning wind or fire.</p>
+    <pre>Halo Bang!</pre>
+    <ul style="list-style-type: square;">
+        <li>Ayam</li>
+        <li>Kuda</li>
+        <li>Singa</li>
+        <li>Kambing</li>
+        <li>Bebek</li>
+    </ul>
+    <ol type="I">
+        <li>Masak</li>
+        <li>Belajar</li>
+        <li>Tidur</li>
+    </ol>
+    <a href="https://google.com" target="_blank">Google</a>
+
+    <button><a href="https://i.insider.com/602ee9ced3ad27001837f2ac?width=1000&format=jpeg&auto=webp" target="_blank">Press This Button</a></button>
+</body>
+</html>
