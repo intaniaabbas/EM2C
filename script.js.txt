@@ -1,0 +1,43 @@
+script.js = 
+
+function validateData() {
+    var username = document.getElementById('username');
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+    var confpass = document.getElementById('confpass');
+    var genderMale = document.getElementById('male');
+    var genderFemale = document.getElementById('female');
+    var checkbox = document.getElementById('agreement');
+
+    if(username.value.length < 5) {
+        alert("Username must be at least 5 letters");
+    }else if(!email.value.endsWith('@gmail.com')){
+        alert("Email must ends with @gmail.com");
+    }else if(!checkAlphaNum(password.value)) {
+        alert("Password must be AlphaNumeric");
+    }else if(password.value != confpass.value) {
+        alert("Password & Confirm Password must be the same");
+    }else if(!genderMale.checked && !genderFemale.checked) {
+        alert("Please pick a gender");
+    }else if(!checkbox.checked) {
+        alert("Please agree to the terms");
+    }
+
+}
+
+function checkAlphaNum(password) {
+    var isAlpha = false;
+    var isNumber = false;
+    for(let i = 0;i < password.length; i++) {
+        if(isNaN(password[i])) {
+            isAlpha = true;
+        } else {
+            isNumber = true;
+        }
+
+        if(isAlpha && isNumber) {
+            return true;
+        }
+    }
+    return false;
+}
